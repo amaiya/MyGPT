@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "mygpt"
+  site-url: "https://amaiya.github.io/mygpt"
+  description: "A locally runnable LLM"
+  repo-branch: main
+  repo-url: "https://github.com/amaiya/mygpt"
