@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "data",
+    "section": "",
+    "text": "source\n\nData\n\n Data (inputs, outputs, model_id='google/flan-t5-base', verbose=1)\n\nPreprocess a sequence-to-sequence dataset\n\ndataset_id = \"samsum\"\ndataset = load_dataset(dataset_id)\ninputs = [row['dialogue'] for row in concatenate_datasets([dataset[\"train\"], dataset[\"test\"]])]\noutputs = [row['summary'] for row in concatenate_datasets([dataset[\"train\"], dataset[\"test\"]])]\n\nFound cached dataset samsum (/root/.cache/huggingface/datasets/samsum/samsum/0.0.0/f1d7c6b7353e6de335d444e424dc002ef70d1277109031327bc9cc6af5d3d46e)\n\n\n\n\n\n\nds = Data(inputs, outputs)\n\n\n\n\nMax source length: 512\n\n\n\n\n\nMax target length: 95\n\n\n\nassert(max([len(x) for x in ds.tokenized_outputs[\"input_ids\"]]) == 95)"
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()\n\n\nsource\n\n\nsay_hello\n\n say_hello (to)\n\nSay hello to somebody\n\nsay_hello(\"Leela\")\n\n'Hello Leela!'\n\n\n\nassert say_hello(\"Leela\")==\"Hello Leela!\""
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MyGPT",
+    "section": "",
+    "text": "pip install mygpt"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "MyGPT",
+    "section": "How to use",
+    "text": "How to use\nTBD"
+  }
+]
