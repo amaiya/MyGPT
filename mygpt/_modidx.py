@@ -6,4 +6,7 @@ d = { 'settings': { 'branch': 'main',
                 'git_url': 'https://github.com/amaiya/mygpt',
                 'lib_path': 'mygpt'},
   'syms': { 'mygpt.core': { 'mygpt.core.foo': ('core.html#foo', 'mygpt/core.py'),
-                            'mygpt.core.say_hello': ('core.html#say_hello', 'mygpt/core.py')}}}
+                            'mygpt.core.say_hello': ('core.html#say_hello', 'mygpt/core.py')},
+            'mygpt.data': { 'mygpt.data.Data': ('data.html#data', 'mygpt/data.py'),
+                            'mygpt.data.Data.__init__': ('data.html#data.__init__', 'mygpt/data.py'),
+                            'mygpt.data.Data.truncate': ('data.html#data.truncate', 'mygpt/data.py')}}}
